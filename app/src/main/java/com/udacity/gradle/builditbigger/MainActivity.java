@@ -46,8 +46,10 @@ public class MainActivity extends AppCompatActivity {
         Provider jokeProvider = new Provider();
         String joke = jokeProvider.getJoke();
 //        Toast.makeText(this, joke, Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(this, JokeViewerActivity.class);
-        intent.putExtra("JOKE", joke);
-        startActivity(intent);
+//        Intent intent = new Intent(this, JokeViewerActivity.class);
+//        intent.putExtra("JOKE", joke);
+//        startActivity(intent);
+
+        new JokeAsyncTask(this).execute();
     }
 }

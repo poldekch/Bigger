@@ -1,7 +1,7 @@
 package com.example.joke;
 
 public class Provider {
-    public String getJoke() {
+    public static String getJoke() {
 
         return "Why do they call it hyper text? \n" +
                 "Too much JAVA.";
