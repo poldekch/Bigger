@@ -16,7 +16,7 @@ public class JokeAsyncTask extends AsyncTask<Void, Void, String> {
     private Context mContext;
 
     // TODO check
-    private String GOOGLE_ENGINE_URL = "http://localhost:8080/_ah/api/";
+    private String GOOGLE_ENGINE_URL = "http://10.0.2.2:8080/_ah/api/";
 
     public JokeAsyncTask(Context context) {
         mContext = context;
@@ -25,7 +25,6 @@ public class JokeAsyncTask extends AsyncTask<Void, Void, String> {
     @Override
     protected String doInBackground(Void... params) {
 
-        // TODO check
         MyApi.Builder apiBuilder = new MyApi.Builder(AndroidHttp.newCompatibleTransport(),
                 new AndroidJsonFactory(),
                 null)
