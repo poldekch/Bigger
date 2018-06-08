@@ -32,12 +32,12 @@ android {
         }
     }
 
-    flavorDimensions "full", "demo"
+    flavorDimensions "full"
 
     productFlavors {
         free {
             applicationId "com.udacity.gradle.builditbigger.free"
-            dimension "demo"
+            dimension "full"
         }
         paid {
             applicationId "com.udacity.gradle.builditbigger.paid"
